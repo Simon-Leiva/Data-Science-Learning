@@ -34,9 +34,10 @@ imagine that we can, so we will have that
 
 <a href="http://www.codecogs.com/eqnedit.php?latex=$$P(Y&space;=&space;y_i)&space;=&space;y_i^{\beta_0&space;&plus;&space;\beta_1x_{i1}&space;&plus;&space;\beta_2x_{i2}&space;&plus;&space;\ldots}(1-y)^{1&space;-&space;\beta_0&space;&plus;&space;\beta_1x_{i1}&space;&plus;&space;\beta_2x_{i2}&space;&plus;&space;\ldots}$$" target="_blank"><img src="http://latex.codecogs.com/gif.latex?$$P(Y&space;=&space;y_i)&space;=&space;y_i^{\beta_0&space;&plus;&space;\beta_1x_{i1}&space;&plus;&space;\beta_2x_{i2}&space;&plus;&space;\ldots}(1-y)^{1&space;-&space;\beta_0&space;&plus;&space;\beta_1x_{i1}&space;&plus;&space;\beta_2x_{i2}&space;&plus;&space;\ldots}$$" title="$$P(Y = y_i) = y_i^{\beta_0 + \beta_1x_{i1} + \beta_2x_{i2} + \ldots}(1-y)^{1 - \beta_0 + \beta_1x_{i1} + \beta_2x_{i2} + \ldots}$$" /></a>
 
-Now I want you to imagine that you have <a href="http://www.codecogs.com/eqnedit.php?latex=$\beta_0&space;=&space;2$" target="_blank"><img src="http://latex.codecogs.com/gif.latex?$\beta_0&space;=&space;2$" title="$\beta_0 = 2.67$" /></a> and all your other variables are 0, then you are saying that the mean of a Bernoulli a.k.a probability is greater than one?!.
+Now I want you to imagine that you have <a href="http://www.codecogs.com/eqnedit.php?latex=$\beta_0&space;=&space;2$" target="_blank"><img src="http://latex.codecogs.com/gif.latex?$\beta_0&space;=&space;2$" title="$\beta_0 = 2.67$" /></a> and all your other variables are 0, then you are saying that the mean of a Bernoulli a.k.a probability of ocurrence is greater than one?!.
 so, how we deal with that problem? a simple way is to scale the linear function to make us sure that we will never have a value over than one or under zero.
 With that spirit we will use a function that we will known as **link function**. 
 Please notice that if   
 
+<a href="http://www.codecogs.com/eqnedit.php?latex=-\infty&space;<&space;x&space;<&space;\infty&space;\Rightarrow&space;\frac{\exp(x)&space;}{\exp(x)&space;&plus;1&space;}&space;\in&space;[0,&space;1]" target="_blank"><img src="http://latex.codecogs.com/gif.latex?-\infty&space;<&space;x&space;<&space;\infty&space;\Rightarrow&space;\frac{\exp(x)&space;}{\exp(x)&space;&plus;1&space;}&space;\in&space;[0,&space;1]" title="-\infty < x < \infty \Rightarrow \frac{\exp(x) }{\exp(x) +1 } \in [0, 1]" /></a>
 
